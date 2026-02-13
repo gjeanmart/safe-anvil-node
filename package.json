@@ -1,4 +1,9 @@
 {
+  "scripts": {
+    "test:docker": "./scripts/test-local.sh",
+    "build:docker": "docker build -t safe-anvil-node:latest .",
+    "publish:docker": "./scripts/publish.sh"
+  },
   "devDependencies": {
     "@nomicfoundation/hardhat-ignition": "^0.15.0",
     "@nomicfoundation/hardhat-ignition-viem": "^0.15.0",
@@ -13,7 +18,6 @@
     "@types/node": ">=18.0.0",
     "chai": "^4.2.0",
     "ethers": "^6.13.0",
-    "ganache": "^7.9.2",
     "hardhat": "^2.22.5",
     "hardhat-gas-reporter": "^1.0.8",
     "solidity-coverage": "^0.8.0",
